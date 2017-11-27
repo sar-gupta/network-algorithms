@@ -3,7 +3,7 @@ using namespace std;
 
 string server(string data)
 {
-  cout<<"Received: "<<data;
+  cout<<"\nReceived: "<<data;
   for(int i=0;i<data.size();i++)
   {
     if(data[i]=='1' && data[i+1]=='1' && data[i+2]=='1' && data[i+3]=='1' && data[i+4]=='1' && data[i+5] != '0')
@@ -16,7 +16,7 @@ string server(string data)
       i+=4;
     }
   }
-  return "Accepted: " + data;
+  return "\nAccepted: " + data;
 }
 
 string client()
